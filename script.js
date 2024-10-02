@@ -24,7 +24,7 @@ function requestMovies() {
 }
 
 const getImage = "https://image.tmdb.org/t/p/";
-const ImageWidth = "w200";  //w300 - original
+const ImageWidth = "original";  //w300 - original
 
 function getMoviePoster(path_) {
     return getImage + ImageWidth + path_;
@@ -56,6 +56,7 @@ function addMovieInDiscover(title_, description_, img_ = "") {
     movie.className = "movie";
         
         const imgElement = document.createElement("img");
+        imgElement.className = "movie-poster";
         imgElement.src = img_;
         
         const movieInfo = document.createElement("div");

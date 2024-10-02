@@ -8,33 +8,29 @@
     <script src="script.js" defer type="module"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js" integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<style>
-    .movie {
-        background-color:red; width:300px; height:fit-content; min-height:400px; overflow:hidden;
-        margin:10px;
-    }
-</style>
 <body>
-    <header style="background-color:blue; width:100%; height:80px; position:relative;">
-        <form id="search" style="height:100%; width:fit-content; margin-inline:100px; background-color:red ; display: flex; align-items:center;">
-            <input type="text" placeholder="search a movie" style="width:240px; font-weight:lighter; font-size:1em; padding:7px 10px;">
-        </form>
-    </header>
-   <main id="main" style="display:flex; flex-wrap: wrap;"> <!--Aqui é onde vai ficar os filmes-->
-        <div class="movie">
-            <img src="https://img.freepik.com/fotos-gratis/pico-da-montanha-nevada-sob-a-majestade-generativa-da-galaxia-estrelada-ai_188544-9650.jpg" alt="">
+   <header>
+    <form id="form"> <!--Header com a barra de pesquisa-->
+        <input type="text" id="search" class="search" placeholder="Pesquise um filme">
+    </form>
+   </header>
 
+   <main id="main"> <!--Aqui é onde vai ficar os filmes-->
+        <div class="movie">
+            <img class="movie-poster" src="https://images.unsplash.com/photo-1519865885898-a54a6f2c7eea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg 
+            &ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8c3BsYXNofHwwfHx8fDE2MjIxODE4NDA&ixlib=rb-1.2.1&q=80&w=1080" alt="catalogoDofilme"> <!--imagem ilustrativa-->
+            
             <div class="movie-info"> <!--Nessa div vai ficar as informações dos filmes-->
                 <h3>Movie title </h3>
                 <span class="green">9.8</span> 
             </div>
-            
+
             <div class="overview">
                 aqui vai a descrição do filme 
             </div>
-
         </div>
 
    </main>
+
 </body>
 </html>
